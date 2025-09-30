@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-neutral-100 text-neutral-800 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-10 bg-white/70 backdrop-blur border-b border-neutral-200">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-lg font-semibold">Travel</h1>
+      <span class="text-sm text-neutral-500">ถ้าคุณเข้าใจทั้งหมดได้ผมเชื่อว่าคุณก็เทรดได้</span>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <main class="max-w-3xl mx-auto px-4 py-6">
+    <article class="prose prose-neutral max-w-none">
+      <h2>โซนหลักๆผมจะเล่นอยู่สามโซน</h2>
+      <ul>
+        <li><strong>Demand & Supply</strong></li>
+        <li><strong>OB</strong></li>
+        <li><strong>FVG</strong></li>
+      </ul>
+      <p>
+        ปัจจุบันหลายคนอาจจะคิดว่า Demand &amp; Supply เป็นอันเดียวกันกับ OB ไปแล้ว
+        แต่สำหรับผมไม่
+      </p>
+    </article>
+
+    <!-- Gallery #1 (Demand) -->
+    <section id="gallery" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>Demand คืออะไร</strong></h3>
+      <p>
+        Demand คือ จุดที่มีความต้องการซื้อ <strong>"Buy"</strong> เป็นจุดที่รายใหญ่มองว่าต้องการที่จะซื้อ
+        จะสังเกตเห็นเป็นแท่งสีเขียวใหญ่ๆ ตรงจุดนี้ที่เราเรียกว่า Demand หรือเรียกว่าเป็นจุดมีแรงซื้อเยอะ
+      </p>
+    </article>
+
+    <!-- Gallery #2 (Supply) -->
+    <section id="gallery2" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>Supply คืออะไร</strong></h3>
+      <p>
+        Supply คือ จุดที่มีความต้องการขาย <strong>"Sell"</strong> จะสังเกตเห็นว่าพอราคาไปถึง จุดที่ต้องการขายเราจะ
+        เห็นแท่งเทียนสีเขียวใหญ่ยาว เกิดจากมีออเดอร์ Sell เป็นจำนวนมากนั้นเอง หรือแรงขายเยอะนั่นแหละครับ
+      </p>
+    </article>
+
+    <!-- Gallery #3 (OB) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery3-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery3-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>OB คืออะไร</strong></h3>
+      <p>OB (Order Block) สำหรับผมจะเป็นแบบนี้ครับ มันจะเป็นแท่งโดดๆ อยู่แทรกแท่งเพื่อนแค่นั้นแหละครับ</p>
+    </article>
+
+    <!-- Gallery #4 (FVG) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery4-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery4-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>FVG คืออะไร</strong></h3>
+      <p>
+        FVG คือ แนวคิดที่ใช้หาจุดเข้าซื้อขายจาก ช่องว่างของราคาที่เกิดการขึ้นหรือลงอย่างรุนแรง
+        หรือ เรียกอีกอย่างว่า ความไม่สมดุลของแรงซื้อและแรงขาย ซึ่งยากต่อการหาจุดเข้าเทรด
+        เรียกง่ายๆว่าช่องว่างระหว่างไส้เทียน
+      </p>
+    </article>
+
+    <!-- Gallery #5 (Hidden base) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery5-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery5-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>โซน Hidden base</strong></h3>
+      <p>
+        โซน Hidden base คือ เป็นโซนที่เห็นได้บ่อยเราต้องคัดหน่อย เอาการคอนเฟิร์มอื่นๆเข้ามา ร่วมด้วยเช่น
+        ฟิโบ ถ้ามันต้องกับเลขจุดย่อก็อาจจใช้ได้ อะไรแบบนี้ครับ สำหรับผมโซน Hidden base เป็นแค่จุดเด้งทำกำไร
+        ได้เฉยๆ บ่อยมากที่มันจะไปเลย ส่วนมากจะแค่เด้ง อย่างตัวอย่างในคลิป ครับ ผมจะหาใน สอง TF คือ H4,H1
+      </p>
+    </article>
+    <!-- Gallery #6 (โครงสร้างตลาด) -->
+    <section id="gallery6" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>นี่คือโครงสร้างตลาดที่ผมใช้ ผมจะเทรดตามโครงสร้างพวกนี้ ตัวอย่างในรูปเลยครับ</strong></h3>
+      <p>ปัจจัยหลักอยู่กับสามโซนด้านบนครับ พยายามทำความเข้าใจกับมันให้เข้าใจได้มากที่สุด</p>
+    </article>
+
+    <!-- Gallery #7 (แท่งเทียน) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery7-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery7-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>แท่งเทียน ขาขึ้น</strong></h3>
+      <p>
+        แชร์ประสบการณ์การสังเกตแท่งเทียนรูปแบบนี้จะเกิดขึ้นในเวลาที่กราฟวิ่งเป็นเทรนแรงๆ
+        แล้วเกิดแท่งฝั่งตรงข้ามขึ้นแต่สุดท้ายไปตามเทรนหลักเหมือนเดิม
+      </p>
+    </article>
+    <!-- Gallery #8 (แท่งเทียน) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery8-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery8-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>แท่งเทียน ขาลง</strong></h3>
+      <p>
+        ตัวอย่างเทรนขาลง หรือฝั่ง Sell ผมจะไม่อธิบายไรมากก็เหมือนฝั่ง Buy นั้นแหละครับ
+        แดง เขียว แดงปิดเขียว ต่อไปอาจเป็น แดง โอเคนะครับเบบี๋555555
+        <ul>มันจะอยู่ในตอนที่ การวิ่งเป็นเทรนแรงๆ เช่น เทรนขาขึ้นมีแท่งเขียวขึ้นมาตลอดยังไม่มีแท่งแดงแต่อยู่ดีๆ
+        มีแท่งแดงขึ้นมาแล้วแท่งเขียวก็ไปปิดแท่งแดง มันบ่งบอกได้ว่าแรง Buy ยังแข็งแรงอยู่</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #9 (การเข้าออเดอร์และการเคลียร์ไส้) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery9-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery9-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การเข้าออเดอร์และการเคลียร์ไส้</strong></h3>
+      <p>
+        การเข้าออเดอร์และการเคลียร์ไส้ การเข้าแบบนี้ผมใช้บ่อยกับการโอเวอร์เทรด
+        การโอเวอร์เทรดของผมจะเอาอยู่ 3 รอบ หรือ สามชุด หรือ สามไม้ บางทีก็ได้เข้าแค่ 2 ไม้ 
+        หรืออาจจะได้ 1 ไม้ เพราะแท่งเทียนอาจไม่เคลียร์ไส้ผมไม่ได้มีเจตนาในการแนะนำให้โอเวอร์เทรด
+        ผมแค่อยากแฃร์สไตล์การเข้าของผมจะยกตัวอย่างเป็นของ PA กลับตัว
+        <br>
+        <ul>"การเคลียร์ไส้ คือ การที่แท่งเทียนวิ่งอีกฝั่งไปก่อนที่จะกลับไปอีกฝั่งแล้วทิ้งอีกฝั่งไว้เป็นไส้ 98% 
+          ของทุกแท่งเทียนมีไส้หมดใช้ใน TF M5,M15" 
+        </ul>
+      </p>
+    </article>
+
+    <!-- Gallery #10 (เคลียร์ไส้ Buy) -->
+    <section id="gallery10" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การเคลียร์ไส้</strong></h3>
+      <p>
+        การเข้าออเดอร์ด้วยการเคลียร์ไส้ ฝั่ง BUY มาเป็นแท่งแดงก่อนแล้วค่อยเข้า แล้วรอให้แท่งที่ 1 ขึ้นไปจบ เป็นแท่งเขียวต่อ พอแท่งที่ 1 จบ 
+        รอแท่งที่ 2 เคลียร์ไส้เหมือนเดิมรอลงมาเป็นแท่งแดงแล้วเข้า แล้วรอแท่ง ที่ 2 ขึ้นไปเป็น เขียวเหมือนเดิมพอแท่งที่ 2 จบเขียว รอแท่งที่ 3 ลงมาเคลียร์ไส้แล้วเข้า แล้วรอลุ้นเลย ครับว่ามันจะไปต่อได้มั้ย
+      </p>
+    </article>
+
+    <!-- Gallery #11 (เคลียร์ไส้ Sell) -->
+    <section id="gallery11" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การเคลียร์ไส้</strong></h3>
+      <p>
+        การเข้าออเดอร์ด้วยการเคลียร์ไส้ ฝั่ง SELL มาเป็นแท่งเขียวก่อนแล้วค่อยเข้า แล้วรอให้แท่งที่ 1 ลงไปจบ เป็นแท่งแดงต่อ พอแท่งที่ 1 จบ 
+        รอแท่งที่ 2 เคลียร์ไส้เหมือนเดิมรอลงมาเป็นแท่งเขียวแล้วเข้า แล้วรอแท่ง ที่ 2 ลงไปเป็น แดงเหมือนเดิมพอแท่งที่ 2 จบแดง รอแท่งที่ 3 ขึ้นมาเคลียร์ไส้แล้วเข้า แล้วรอลุ้นเลย ครับว่ามันจะไปต่อได้มั้ย
+      </p>
+    </article>
+
+    <!-- Gallery #12 (Fibonacci Retracement) -->
+    <section class="mt-6 space-y-3">
+      <div id="gallery12-row1" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      <div id="gallery12-row2" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+    </section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>Fibonacci Retracement</strong></h3>
+      <p>
+        Fibonacci Retracement ผมจะเอาไว้ใช้ในการหาจุดย่อ Buy ย่อ Sell ผมจะใช้ตามเทรน จะมี 3 เส้นหลักๆ ที่ผมใช้ คือ <strong>38.20% 50.00% 61.80%</strong>
+        หลักๆที่กราฟจะย่อ คือ 50.00% ส่วน 61.80% 38.20% เป็นส่วนน้อย 
+        <ul>สรุปคือ Fibonacci Retracement ผมจะเอาไว้ใช้หาจุดย่อของกราฟ</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #13 (การตีหาย่อ Buy) -->
+    <section id="gallery13" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+    
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การตีหาย่อ Buy</strong></h3>
+      <p>
+        การตีหาย่อ Buy ผมจะตีจาก Low ไป Hight เอาเส้น 100.00% ไว้ที่ Low แล้วเอาเส้น 0.00% ไว้ที่ Hight 
+        <ul>ดังรูปเลยครับ</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #14 (การตีหาย่อ Sell) -->
+    <section id="gallery14" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การตีหาย่อ Sell</strong></h3>
+      <p>
+        การตีหาย่อ Sell ผมจะตีจาก Hight ไป Low เอาเส้น 100.00% ไว้ที่ Hight แล้วเอาเส้น 0.00% ไว้ที่ Low 
+        <ul>ดังรูปเลยครับ</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #15 (การกลับตัวBuy) -->
+    <section id="gallery15" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัว ฝั่ง Buy</strong></h3>
+      <p>
+        รูปแบบการกลับตัวฝั่ง Buy 
+        <strong><ul>BOS + MSS + FVG</ul></strong>
+        <strong><ul>รูปแบบการกลับตัวที่ผมใช้บ่อย TF M15,M5</ul></strong>
+        SL จะตั้งเลย FVG ลงมานิดนึง หรือ จะตั้งสุด Low ก็ได้ครับ TP ผมจะเก็บตามความพอใจของตัวเอง
+      </p>
+    </article>
+
+    <!-- Gallery #16 (การกลับตัวSell) -->
+    <section id="gallery16" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัว ฝั่ง Sell</strong></h3>
+      <p>
+        รูปแบบการกลับตัวฝั่ง Sell 
+        <strong><ul>BOS + MSS + FVG</ul></strong>
+        <strong><ul>รูปแบบการกลับตัวที่ผมใช้บ่อย TF M15,M5</ul></strong>
+        SL จะตั้งบน FVG นิดนึง หรือ จะตั้งสุด High ก็ได้ครับ TP ผมจะเก็บตามความพอใจเหมือนเดิม
+      </p>
+    </article>
+
+    <!-- Gallery #17 (การกลับตัวBuy PA + FVG) -->
+    <section id="gallery17" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัว ฝั่ง Buy</strong></h3>
+      <p>
+        รูปแบบการกลับตัวฝั่ง Buy 
+        <strong><ul>PA + FVG</ul></strong>
+        <strong><ul>รูปแบบการกลับตัวที่ผมใช้บ่อย TF M15,M5</ul></strong>
+        SL จะตั้งอยู่ล่างของ FVG เลย TP ผมจะเก็บตามความพอใจของตัวเองรูปแบบนี้น่าจะ SL สั้นสุดละ
+        รูปแบบนี้ผมจะใช้ในกรณีที่อยู่โซนสำคัญต่างๆ
+      </p>
+    </article>
+
+    <!-- Gallery #18 (เพิ่มเติมเกี่ยวกับ PA) -->
+    <section id="gallery18" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>เพิ่มเติมเกี่ยวกับ PA</strong></h3>
+      <p>
+        PA เอาง่ายๆคือแท่งเทียนในการกลับตัว สำหรับผม ทีว่าเจอบ่อยและมีโอกาสกลับตัวสูงมีประมาณนี้ครับ
+        ทุกแบบ <ul>ปัดใจเดียวกันคือ การเอาชนะแท่งตรงข้ามได้ ในการที่จะเข้าออเดอร์ เราสามารถเข้าแท่งเปิดต่อไปได้</ul>
+        SL ถ้าเป็น PA Buy สามารถตั้งข้างล่าง PA ส่วน PA Sell ตั้งข้างบน PA ประมาณนี้ครับ
+        นี่แค่คร่าวๆ <ul>(ถ้าเป็นช่วงที่กราฟ เกิด PA แล้ว หลอนบ่อย เราควรเอาปัดใจอื่นเข้ามาคอนเฟิร์มด้วยครับ)</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #19 (เพิ่มเติมเกี่ยวกับ PA) -->
+    <section id="gallery19" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัวหลอกของ PA</strong></h3>
+      <p>
+        การกลับตัวหลอก หรือ PA กลับตัวหลอก บอกไว้ก่อนว่าการหลอกกับตัวนี้ 
+        จะเกิดในโซนสำคัญ และ เกิดนอกโซน 
+        <ul>แต่ส่วนมากเกิดนอกโซน นอกโซนคือเกิด PA โดยที่ด้านซ้ายไม่มีโซนสำคัญอะไรเลย โอเคนะครับ</ul>
+      </p> 
+    </article>
+
+    <!-- Gallery #20 (การกลับตัว หลอก PA Buy) -->
+    <section id="gallery20" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัวหลอกของ PA Buy</strong></h3>
+      <p>
+        การกลับตัวหลอก ฝั่ง Buy อย่างรูปแรกกราฟได้เกิด PA ไม่รู้แหละว่าในโซน หรือ นอกโซน 
+        <ul>แต่ถ้าเกิด PA Buy แบบในรูปแรกแล้ว แท่งต่อไปเป็นแท่งแดงมาปิดทั้งสองแท่งเขียวแบบในรูปที่สอง</ul>
+        ให้คาดการณ์ไว้ว่ากลับตัวไม่สำเร็จ แล้วผมจะคาดเดาเลยว่าถ้าเกิดแบบนี้ขึ้นแสดงว่ามันจะไม่ขึ้น มันจะลงต่อตามแท่งแดงที่ลงมาปิดสองแท่ง
+        ถ้าผมจะเอาเทรดผมจะรอแท่งแดงในรูปที่สองจบแท่งแล้วแท่งต่อไปผมจะรอ เคลียร์ไส้แล้วเข้า Sell อย่างในรูปที่สามเลยครับ
+        TP จะไม่ตายตัว เพราะผมเอาไว้แค่ดูแนวโน้มเฉยๆครับ 
+        <ul>ที่บอกว่า Sell อันนี้แค่ยกตัวอย่าง โอเคนะครับ</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #21 (การกลับตัว หลอก PA Sell) -->  
+    <section id="gallery21" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>การกลับตัวหลอกของ PA Sell</strong></h3>
+      <p>
+        การกลับตัวหลอก ฝั่ง Sell หลักการเหมือนกับฝั่ง Buy เลยครับ แค่กลับฝั่ง
+        พยายามเข้าใจฝั่ง Buy เอาละกันครับ แล้วให้มันเปลี่ยนฝั่ง Sell เอาผมขี้เกียจพิมพ์
+        <ul><strong>อย่าลืมนะครับว่ามันชอบเกิดนอกโซน</strong></ul>
+      </p> 
+    </article>
+
+    <!-- Gallery #22 (Demand Zone) -->
+    <section id="gallery22" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>Demand Zone</strong></h3>
+      <p>
+        เส้นดำ TF H4,H1
+        <ul>เส้นน้ำเงิน TF M15,M5</ul>
+      </p>
+    </article>
+
+    <!-- Gallery #22 (Supply Zone) -->
+    <section id="gallery23" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>Supply Zone</strong></h3>
+      <p>
+        เส้นดำ TF H4,H1
+        <ul>เส้นน้ำเงิน TF M15,M5</ul>
+      </p>
+    </article>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex flex-col" onclick="onBackdropClick(event)">
+    <div class="flex items-center justify-between px-4 py-3 select-none text-white">
+      <div id="counter" class="text-sm"></div>
+      <button onclick="closeLightbox()" class="rounded-xl px-3 py-1.5 bg-white/10 text-white text-sm hover:bg-white/20">ปิด (Esc)</button>
+    </div>
+    <div class="flex-1 flex items-center justify-center px-4 pb-4">
+      <img id="lightbox-img" class="max-h-[80vh] max-w-[92vw] object-contain cursor-pointer" />
+      <video id="lightbox-video" 
+             class="max-h-[80vh] max-w-[92vw] object-contain hidden"
+             controls 
+             playsinline 
+             preload="metadata"
+             type="video/mp4">
+      </video>
+    </div>
+    <div id="caption" class="px-5 pb-6 text-center text-white/90 text-sm"></div>
+    <div class="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2">
+      <button onclick="prevImage()" class="pointer-events-auto h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 text-white">◀</button>
+      <button onclick="nextImage()" class="pointer-events-auto h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 text-white">▶</button>
+    </div>
+  </div>
+
+  <footer class="border-t border-neutral-200 mt-8">
+    <div class="max-w-3xl mx-auto px-4 py-10 text-sm text-neutral-500">
+      ทั้งหมดในนี้เป็นเพียงส่วนนึงที่ผมเจอมาและไม่ได้อยากจะบอกว่าทุกอย่างในนี้มันดีแต่ทุกคนสามารถนำไปปรับใช้ในแบบของตัวเองได้ขอบคุณครับ
+      “ถ้าเราไม่สำเร็จ ใครจะรู้ว่าเราพยายาม”
+    </div>
+  </footer>
+
+  <script>
+    // ====== ข้อมูลสื่อ (รูป/วิดีโอ) ======
+    const images1 = [
+      { type: "image", src: "001.jpg", caption: "Demand" },
+      { type: "image", src: "002.jpg", caption: "Demand" },
+    ];
+    const images2 = [
+      { type: "image", src: "003.jpg", caption: "Supply" },
+      { type: "image", src: "004.jpg", caption: "Supply" },
+    ];
+    const images3 = [
+      { type: "image", src: "005.jpg", caption: "OB ฝั่ง Buy" },
+      { type: "image", src: "006.jpg", caption: "OB ฝั่ง Buy" },
+      { type: "image", src: "007.jpg", caption: "OB ฝั่ง Sell" },
+      { type: "image", src: "008.jpg", caption: "OB ฝั่ง Sell" },
+    ];
+    const images4 = [
+      { type: "image", src: "009.jpg", caption: "FVG ฝั่ง Buy" },
+      { type: "image", src: "010.jpg", caption: "FVG ฝั่ง Sell" },
+    ];
+    const images5 = [
+      { type: "image", src: "011.jpg", caption: "Hidden Base" },
+      { type: "image", src: "012.jpg", caption: "Hidden Base" },
+      { 
+        type: "video",src: "hb.mp4",poster: "hbp.png",caption: "Hidden Base Video"
+      }
+    ];
+    const images6 = [
+      { type: "image", src: "013.jpg", caption: "โครงสร้างตลาด" },
+      { type: "image", src: "014.jpg", caption: "โครงสร้างจากเทรนขาลงเปลี่ยนเป็นขาขึ้น" },
+      { type: "image", src: "015.jpg", caption: "โครงสร้างจากเทรนขาลงเปลี่ยนเป็นขาขึ้น" },
+      { type: "image", src: "016.jpg", caption: "โครงสร้างจากเทรนขาขึ้นเปลี่ยนเป็นขาลง" },
+      { type: "image", src: "017.jpg", caption: "โครงสร้างจากเทรนขาขึ้นเปลี่ยนเป็นขาลง" },
+      { type: "image", src: "018.jpg", caption: "จังหวะการเปลี่ยนโครงสร้าง จากขาขึ้นเป็นขาลง" },
+      { type: "image", src: "019.jpg", caption: "จังหวะการเปลี่ยนโครงสร้าง จากขาขึ้นเป็นขาลง" },
+      { type: "image", src: "020.jpg", caption: "จังหวะการเปลี่ยนโครงสร้าง จากขาลงเป็นขาขึ้น" },
+      { type: "image", src: "021.jpg", caption: "จังหวะการเปลี่ยนโครงสร้าง จากขาลงเป็นขาขึ้น" },
+    ];
+    const images7 = [
+      { type: "image", src: "022.jpg", caption: "แท่งเทียน" },
+      { type: "image", src: "023.jpg", caption: "แท่งเทียน" },
+    ];
+
+    const images8 = [
+      { type: "image", src: "024.jpg", caption: "แท่งเทียน" },
+      { type: "image", src: "025.jpg", caption: "แท่งเทียน" },
+    ];
+
+    const images9 = [
+      { type: "image", src: "026.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+      { type: "image", src: "027.jpg", caption: "การกลับตัว ฝั่ง sell" },
+    ];
+
+    const images10 = [
+      { type: "image", src: "028.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "029.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "030.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "031.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "032.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "033.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "034.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+      { type: "image", src: "00X.jpg", caption: "เคลียร์ไส้ ฝั่ง BUY" },
+    ];
+
+    const images11 = [
+      { type: "image", src: "035.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "036.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "037.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "038.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "039.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "040.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+      { type: "image", src: "00P.jpg", caption: "เคลียร์ไส้ ฝั่ง Sell" },
+    ];
+
+    const images12 = [
+      {type: "image", src: "041.jpg", caption: "Fibonacci Retracement" },
+      {type: "image", src: "042.jpg", caption: "Fibonacci Retracement" },
+    ];
+
+    const images13 = [
+      {type: "image", src: "043.jpg", caption: "ย่อ Buy" },
+      {type: "image", src: "044.jpg", caption: "ย่อ Buy" },
+      {type: "image", src: "045.jpg", caption: "ย่อ Buy" },
+      {type: "image", src: "046.jpg", caption: "ย่อ Buy" },
+    ];
+
+    const images14 = [
+      {type: "image", src: "047.jpg", caption: "ย่อ Sell" },
+      {type: "image", src: "048.jpg", caption: "ย่อ Sell" },
+      {type: "image", src: "049.jpg", caption: "ย่อ Sell" },
+      {type: "image", src: "050.jpg", caption: "ย่อ Sell" },
+    ];
+
+    const images15 = [
+      {type: "image", src: "051.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+      {type: "image", src: "052.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+      {type: "image", src: "053.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+      {type: "image", src: "054.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+      {type: "image", src: "055.jpg", caption: "การกลับตัว ฝั่ง Buy" }, 
+      {type: "image", src: "056.jpg", caption: "การกลับตัว ฝั่ง Buy" },
+    ];
+
+    const images16 = [
+      {type: "image", src: "057.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "058.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "059.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "060.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "061.jpg", caption: "การกลับตัว ฝั่ง Sell" }, 
+    ];
+
+    const images17 = [
+      {type: "image", src: "062.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "063.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "064.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "065.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "066.jpg", caption: "การกลับตัว ฝั่ง Sell" },
+      {type: "image", src: "067.jpg", caption: "การกลับตัว ฝั่ง Sell" }, 
+    ];
+
+    const images18 = [
+      {type: "image", src: "076.jpg", caption: "PA" },
+      {type: "image", src: "077.jpg", caption: "PA" },
+      {type: "image", src: "078.jpg", caption: "PA" },
+      {type: "image", src: "079.jpg", caption: "PA" },
+      {type: "image", src: "080.jpg", caption: "PA" },
+      {type: "image", src: "081.jpg", caption: "PA" },
+    ];
+
+    const images19 = [
+      {type: "image", src: "068.jpg", caption: "PA กลับตัวหลอก" }, 
+      {type: "image", src: "069.jpg", caption: "PA กลับตัวหลอก" },
+    ];
+
+    const images20 = [
+      {type: "image", src: "070.jpg", caption: "PA กลับตัวหลอก ฝั่ง Buy" }, 
+      {type: "image", src: "071.jpg", caption: "PA กลับตัวหลอก ฝั่ง Buy" },
+      {type: "image", src: "072.jpg", caption: "PA กลับตัวหลอก ฝั่ง Buy" }, 
+      {type: "image", src: "068.jpg", caption: "PA กลับตัวหลอก ฝั่ง Buy" },
+    ];
+
+    const images21 = [
+      {type: "image", src: "073.jpg", caption: "PA กลับตัวหลอก ฝั่ง Sell" }, 
+      {type: "image", src: "074.jpg", caption: "PA กลับตัวหลอก ฝั่ง Sell" },
+      {type: "image", src: "075.jpg", caption: "PA กลับตัวหลอก ฝั่ง Sell" }, 
+      {type: "image", src: "069.jpg", caption: "PA กลับตัวหลอก ฝั่ง Sell" },
+    ];
+
+    const images22 = [
+      {type: "image", src: "082.jpg", caption: "Demand Zone" },
+      {type: "image", src: "083.jpg", caption: "Demand Zone" },
+    ];
+
+    const images23 = [
+      {type: "image", src: "084.jpg", caption: "Supply Zone" },
+      {type: "image", src: "085.jpg", caption: "Supply Zone" },
+    ];
+
+    const allImages = [...images1, ...images2, ...images3, ...images4, ...images5,
+    ...images6, ...images7, ...images8, ...images9, ...images10, ...images11, ...images12,
+    ...images13, ...images14, ...images15, ...images16, ...images17, ...images18, ...images19,
+    ...images20, ...images21, ...images22, ...images23];
+
+    // offsets
+    const offset1 = 0;
+    const offset2 = offset1 + images1.length;
+    const offset3 = offset2 + images2.length;
+    const offset4 = offset3 + images3.length;
+    const offset5 = offset4 + images4.length;
+    const offset6 = offset5 + images5.length;
+    const offset7 = offset6 + images6.length;
+    const offset8 = offset7 + images7.length;
+    const offset9 = offset8 + images8.length;
+    const offset10 = offset9 + images9.length;
+    const offset11 = offset10 + images10.length;
+    const offset12 = offset11 + images11.length;
+    const offset13 = offset12 + images12.length;
+    const offset14 = offset13 + images13.length;
+    const offset15 = offset14 + images14.length;
+    const offset16 = offset15 + images15.length;
+    const offset17 = offset16 + images16.length;
+    const offset18 = offset17 + images17.length;
+    const offset19 = offset18 + images18.length;
+    const offset20 = offset19 + images19.length;
+    const offset21 = offset20 + images20.length;
+    const offset22 = offset21 + images21.length;
+    const offset23 = offset22 + images22.length;
+
+    // DOM
+    const gallery1El = document.getElementById("gallery");
+    const gallery2El = document.getElementById("gallery2");
+    const gallery3Row1El = document.getElementById("gallery3-row1");
+    const gallery3Row2El = document.getElementById("gallery3-row2");
+    const gallery4Row1El = document.getElementById("gallery4-row1");
+    const gallery4Row2El = document.getElementById("gallery4-row2");
+    const gallery5El = document.getElementById("gallery5-row1");
+    const gallery5Row2El = document.getElementById("gallery5-row2");
+    const gallery6El = document.getElementById("gallery6");
+    const gallery7Row1El = document.getElementById("gallery7-row1");
+    const gallery7Row2El = document.getElementById("gallery7-row2");
+    const gallery8Row1El = document.getElementById("gallery8-row1");
+    const gallery8Row2El = document.getElementById("gallery8-row2");
+    const gallery9Row1El = document.getElementById("gallery9-row1");
+    const gallery9Row2El = document.getElementById("gallery9-row2");
+    const gallery10El = document.getElementById("gallery10");
+    const gallery11El = document.getElementById("gallery11");
+    const gallery12El = document.getElementById("gallery12-row1");
+    const gallery12Row2El = document.getElementById("gallery12-row2");
+    const gallery13El = document.getElementById("gallery13");
+    const gallery14El = document.getElementById("gallery14");
+    const gallery15El = document.getElementById("gallery15");
+    const gallery16El = document.getElementById("gallery16");
+    const gallery17El = document.getElementById("gallery17");
+    const gallery18El = document.getElementById("gallery18");
+    const gallery19El = document.getElementById("gallery19");
+    const gallery20El = document.getElementById("gallery20");
+    const gallery21El = document.getElementById("gallery21");
+    const gallery22El = document.getElementById("gallery22");
+    const gallery23El = document.getElementById("gallery23");
+
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxVideo = document.getElementById("lightbox-video");
+    const caption = document.getElementById("caption");
+    const counter = document.getElementById("counter");
+    let currentIndex = 0;
+
+    // ====== การ์ดสื่อ (thumbnail) ======
+    function makeCard(item, globalIndex) {
+      const isVideo = item.type === "video";
+      const thumbSrc = isVideo ? (item.poster || "video-poster.jpg") : item.src;
+      const btn = document.createElement("button");
+      btn.className = "group relative aspect-[4/3] overflow-hidden rounded-3xl bg-white shadow-md ring-1 ring-neutral-200";
+      btn.onclick = () => openLightbox(globalIndex);
+      btn.innerHTML = `
+        <img src="${thumbSrc}" alt="${item.caption || ""}"
+             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" loading="lazy" />
+        ${isVideo ? `
+          <div class="absolute inset-0 grid place-items-center">
+            <div class="h-12 w-12 rounded-full bg-black/50 text-white text-2xl grid place-items-center">▶</div>
+          </div>` : ``}
+        <div class="absolute inset-x-0 bottom-0 p-2 text-[12px] text-white/95 bg-gradient-to-t from-black/50 to-transparent">
+          ${item.caption || ""}
+        </div>`;
+      return btn;
+    }
+
+    // แสดงแต่ละแกลเลอรี
+    images1.forEach((img, i) => gallery1El.appendChild(makeCard(img, offset1 + i)));
+    images2.forEach((img, i) => gallery2El.appendChild(makeCard(img, offset2 + i)));
+    images3.slice(0, 2).forEach((img, i) => gallery3Row1El.appendChild(makeCard(img, offset3 + i)));
+    images3.slice(2).forEach((img, i) => gallery3Row2El.appendChild(makeCard(img, offset3 + 2 + i)));
+    images4.slice(0, 2).forEach((img, i) => gallery4Row1El.appendChild(makeCard(img, offset4 + i)));
+    images4.slice(2).forEach((img, i) => gallery4Row2El.appendChild(makeCard(img, offset4 + 2 + i)));
+    images5.forEach((item, i) => {
+      const card = makeCard(item, offset5 + i);
+      if (i < 2) {
+        gallery5El.appendChild(card);
+      } else {
+        gallery5Row2El.appendChild(card);
+      }
+    });
+    images6.forEach((img, i) => gallery6El.appendChild(makeCard(img, offset6 + i)));
+    images7.slice(0, 2).forEach((img, i) => gallery7Row1El.appendChild(makeCard(img, offset7 + i)));
+    images7.slice(2).forEach((img, i) => gallery7Row2El.appendChild(makeCard(img, offset7 + 2 + i)));
+    images8.slice(0, 2).forEach((img, i) => gallery8Row1El.appendChild(makeCard(img, offset8 + i)));
+    images8.slice(2).forEach((img, i) => gallery8Row2El.appendChild(makeCard(img, offset8 + 2 + i)));
+    images9.slice(0, 2).forEach((img, i) => gallery9Row1El.appendChild(makeCard(img, offset9 + i)));
+    images9.slice(2).forEach((img, i) => gallery9Row2El.appendChild(makeCard(img, offset9 + 2 + i)));
+    images10.forEach((img, i) => gallery10El.appendChild(makeCard(img, offset10 + i)));
+    images11.forEach((img, i) => gallery11El.appendChild(makeCard(img, offset11 + i)));
+    images12.slice(0, 2).forEach((img, i) => gallery12El.appendChild(makeCard(img, offset12 + i)));
+    images12.slice(2).forEach((img, i) => gallery12Row2El.appendChild(makeCard(img, offset12 + 2 + i)));
+    images13.forEach((img, i) => gallery13El.appendChild(makeCard(img, offset13 + i)));
+    images14.forEach((img, i) => gallery14El.appendChild(makeCard(img, offset14 + i)));
+    images15.forEach((img, i) => gallery15El.appendChild(makeCard(img, offset15 + i)));
+    images16.forEach((img, i) => gallery16El.appendChild(makeCard(img, offset16 + i)));
+    images17.forEach((img, i) => gallery17El.appendChild(makeCard(img, offset17 + i)));
+    images18.forEach((img, i) => gallery18El.appendChild(makeCard(img, offset18 + i)));
+    images19.forEach((img, i) => gallery19El.appendChild(makeCard(img, offset19 + i)));
+    images20.forEach((img, i) => gallery20El.appendChild(makeCard(img, offset20 + i)));
+    images21.forEach((img, i) => gallery21El.appendChild(makeCard(img, offset21 + i)));
+    images22.forEach((img, i) => gallery22El.appendChild(makeCard(img, offset22 + i)));
+    images23.forEach((img, i) => gallery23El.appendChild(makeCard(img, offset23 + i)));
+
+
+    // ====== Lightbox ======
+    function openLightbox(i) {
+      currentIndex = i;
+      updateLightbox();
+      lightbox.classList.remove("hidden");
+    }
+    function closeLightbox() {
+      lightboxVideo.pause();
+      lightbox.classList.add("hidden");
+    }
+    function prevImage() {
+      lightboxVideo.pause();
+      currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+      updateLightbox();
+    }
+    function nextImage() {
+      lightboxVideo.pause();
+      currentIndex = (currentIndex + 1) % allImages.length;
+      updateLightbox();
+    }
+    function updateLightbox() {
+      const item = allImages[currentIndex];
+      // reset
+      lightboxImg.classList.add("hidden");
+      lightboxVideo.classList.add("hidden");
+      lightboxVideo.pause();
+
+      if (item.type === "video") {
+        lightboxVideo.classList.remove("hidden");
+        lightboxVideo.src = item.src;
+        if (item.poster) lightboxVideo.poster = item.poster;
+      } else {
+        lightboxImg.classList.remove("hidden");
+        lightboxImg.src = item.src;
+      }
+      caption.textContent = item.caption || "";
+      counter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+    }
+    function onBackdropClick(e){ if(e.target === lightbox) closeLightbox(); }
+
+    // คลิกรูปไปถัดไป
+    lightboxImg.addEventListener("click", () => {
+      const item = allImages[currentIndex];
+      if (item.type !== "video") nextImage();
+    });
+
+    // คีย์บอร์ด
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.classList.contains("hidden")) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "ArrowRight") nextImage();
+    });
+  </script>
+</body>
+</html>

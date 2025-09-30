@@ -378,9 +378,14 @@
     const images5 = [
       { type: "image", src: "011.jpg", caption: "Hidden Base" },
       { type: "image", src: "012.jpg", caption: "Hidden Base" },
-      { 
-        type: "video",src: "hb.mp4",poster: "hbp.png",caption: "Hidden Base Video"
-      }
+    {
+      type: "video",
+      src: "./hb.MP4",        
+      poster: "./hbp.png",   
+      caption: "Hidden Base Video"
+    }
+    ];
+
     ];
     const images6 = [
       { type: "image", src: "013.jpg", caption: "โครงสร้างตลาด" },
@@ -642,44 +647,25 @@
 
 
     // ====== Lightbox ======
-    function openLightbox(i) {
-      currentIndex = i;
-      updateLightbox();
-      lightbox.classList.remove("hidden");
-    }
-    function closeLightbox() {
-      lightboxVideo.pause();
-      lightbox.classList.add("hidden");
-    }
-    function prevImage() {
-      lightboxVideo.pause();
-      currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
-      updateLightbox();
-    }
-    function nextImage() {
-      lightboxVideo.pause();
-      currentIndex = (currentIndex + 1) % allImages.length;
-      updateLightbox();
-    }
     function updateLightbox() {
       const item = allImages[currentIndex];
-      // reset
-      lightboxImg.classList.add("hidden");
-      lightboxVideo.classList.add("hidden");
-      lightboxVideo.pause();
+  // reset
+    lightboxImg.classList.add("hidden");
+    lightboxVideo.classList.add("hidden");
+    lightboxVideo.pause();
 
-      if (item.type === "video") {
-        lightboxVideo.classList.remove("hidden");
-        lightboxVideo.src = item.src;
-        if (item.poster) lightboxVideo.poster = item.poster;
-      } else {
-        lightboxImg.classList.remove("hidden");
-        lightboxImg.src = item.src;
-      }
-      caption.textContent = item.caption || "";
-      counter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+  if (item.type === "video") {
+    lightboxVideo.classList.remove("hidden");
+    lightboxVideo.src = item.src;                  // ตั้ง path วิดีโอ
+    if (item.poster) lightboxVideo.poster = item.poster;
+    lightboxVideo.load();                          // <<<<<< ใส่บรรทัดนี้
+  } else {
+    lightboxImg.classList.remove("hidden");
+    lightboxImg.src = item.src;
+  }
+    caption.textContent = item.caption || "";
+    counter.textContent = `${currentIndex + 1} / ${allImages.length}`;
     }
-    function onBackdropClick(e){ if(e.target === lightbox) closeLightbox(); }
 
     // คลิกรูปไปถัดไป
     lightboxImg.addEventListener("click", () => {

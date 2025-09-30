@@ -379,10 +379,7 @@
       { type: "image", src: "011.jpg", caption: "Hidden Base" },
       { type: "image", src: "012.jpg", caption: "Hidden Base" },
       { 
-        {
-          type: "video",src: "./hb.MP4",poster: "./Hbp.png",caption: "Hidden Base Video"
-        }
-
+        type: "video",src: "hb.MP4",poster: "hbp.png",caption: "Hidden Base Video"
       }
     ];
     const images6 = [
@@ -675,7 +672,6 @@
         lightboxVideo.classList.remove("hidden");
         lightboxVideo.src = item.src;
         if (item.poster) lightboxVideo.poster = item.poster;
-        lightboxVideo.load();  
       } else {
         lightboxImg.classList.remove("hidden");
         lightboxImg.src = item.src;

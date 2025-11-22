@@ -12,7 +12,7 @@
   <header class="sticky top-0 z-10 bg-white/70 backdrop-blur border-b border-neutral-200">
     <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
       <h1 class="text-lg font-semibold">Travel</h1>
-      <span class="text-sm text-neutral-500">ถ้าคุณเข้าใจทั้งหมดได้ผมเชื่อว่าคุณก็เทรดได้</span>
+      <span class="text-sm text-neutral-500">ข้อมูลทั้งหมดนี้ถูกอิงจาก <strong>เลโอ</strong> ทั้งหมด</span>
     </div>
   </header>
 
@@ -408,6 +408,17 @@
       </p>
     </article>
 
+    <!-- Gallery #31 (ตัวอย่าง เพิ่มเติม) -->
+    <section id="gallery31" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3"></section>
+
+    <article class="prose prose-neutral max-w-none mt-8">
+      <h3><strong>ตัวอย่าง เพิ่มเติม</strong></h3>
+      <p>อันนี้คือทั้งหมดที่อยากให้ทวนกันอีกรอบนะครับ ทั้งหมด 8 รูปนี้ผมจะรวบรวมข้อมูลทั้งหมดเอาไว้เพื่อ
+        ให้อ่านได้ง่ายมากขึ้นนะครับทั้งหมดนี้แทบจะเป็นข้อมูลพื้นฐานเลยก็ว่าได้แต่อยากให้เข้าใจในจุดนี้แล้วจะเข้าใจ
+        กราฟมากขึ้นกว่าเดิมแน่นอนครับ
+      </p>
+    </article>
+
   </main>
 
   <!-- Lightbox -->
@@ -637,11 +648,22 @@
       {type: "image", src: "104.jpg", caption: "ตัวอย่าง IDM ขาลง" },
     ];
 
+    const images31 = [
+      {type: "image", src: "105.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "106.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "107.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "108.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "109.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "110.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "111.jpg", caption: "ข้อมูลเพิ่มเติม" },
+      {type: "image", src: "112.jpg", caption: "ข้อมูลเพิ่มเติม" },
+    ]
+
     const allImages = [...images1, ...images2, ...images3, ...images4, ...images5,
     ...images6, ...images7, ...images8, ...images9, ...images10, ...images11, ...images12,
     ...images13, ...images14, ...images15, ...images16, ...images17, ...images18, ...images19,
     ...images20, ...images21, ...images22, ...images23, ...images24, ...images25, ...images26,
-    ...images27, ...images28, ...images29, ...images30];
+    ...images27, ...images28, ...images29, ...images30, ...images31];
 
     // offsets
     const offset1 = 0;
@@ -674,6 +696,7 @@
     const offset28 = offset27 + images27.length;
     const offset29 = offset28 + images28.length;
     const offset30 = offset29 + images29.length;
+    const offset31 = offset30 + images30.length;
 
     // DOM
     const gallery1El = document.getElementById("gallery");
@@ -713,6 +736,7 @@
     const gallery28El = document.getElementById("gallery28");
     const gallery29El = document.getElementById("gallery29");
     const gallery30El = document.getElementById("gallery30");
+    const gallery31El = document.getElementById("gallery31");
 
 
     const lightbox = document.getElementById("lightbox");
@@ -786,7 +810,7 @@
     images28.forEach((img, i) => gallery28El.appendChild(makeCard(img, offset28 + i)));
     images29.forEach((img, i) => gallery29El.appendChild(makeCard(img, offset29 + i)));
     images30.forEach((img, i) => gallery30El.appendChild(makeCard(img, offset30 + i)));
-
+    images31.forEach((img, i) => gallery31El.appendChild(makeCard(img, offset31 + i)));
 
     // ====== Lightbox ======
     function openLightbox(i) {
